@@ -22,7 +22,7 @@ function App() {
     setFileChange(null);
   
     
-    const apiResponse = await axios.post("http://localhost:8080/api/create", formData);
+    const apiResponse = await axios.post("/api/create", formData);
     if(apiResponse) {
       
       toast.success("Thu bài thành công!")
